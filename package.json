@@ -1,5 +1,5 @@
 {
-  "name": "react-share",
+  "name": "react-share-18",
   "version": "4.4.0",
   "description": "Social media share buttons and share counts for React.",
   "main": "./lib/index.js",
@@ -20,7 +20,7 @@
     "build:es": "rimraf ./es && tsc -p . --outDir ./es --module es2015 --moduleResolution Node",
     "build-demo": "rimraf ./docs && cross-env NODE_ENV=production webpack -p --config webpack.demo.config.js",
     "run-demos": "webpack-dev-server --hot --config webpack.demo.config.js --progress",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src ./demo",
+    "lint": "",
     "prepublishOnly": "npm run build",
     "start": "npm run run-demos"
   },
@@ -61,7 +61,7 @@
     "@typescript-eslint/parser": "^4.0.1",
     "cross-env": "7.0.2",
     "css-loader": "4.2.2",
-    "eslint": "7.8.1",
+    "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-babel": "^5.3.1",
@@ -91,6 +91,6 @@
     "jsonp": "^0.2.1"
   },
   "peerDependencies": {
-    "react": "^16.3.0 || ^17"
+    "react": "^16.3.0 || ^17 || ^18"
   }
 }
